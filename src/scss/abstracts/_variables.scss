@@ -1,0 +1,117 @@
+/**
+ * Bootstrap Variables
+ */
+
+// Colors
+$red: #E83E00;
+$vibrant-green: #BEF50C;
+$green: #54B500;
+
+$yellow: #E8E100;
+$darker-yellow: #CCC600;
+$dark-yellow: #B5B000;
+$alt-yellow: #DBD400;
+$green-yellow: #BBCB00;
+
+$orange: #FF8900;
+$orange-2: #FFA222;
+
+$ice-blue: #DBE5EA;
+$blue-gray: #DEE2E3;
+$white: #FFF;
+$gray-100: #F8F8F8;
+$gray-200: #EFEFEF;
+$gray-300: #C6C6C6;
+$gray-400: #9D9D9D;
+$gray-500: #838383;
+$gray-600: #626262;
+$gray-900: #0E1015;
+$black: #000;
+
+$blue: #179FE3;
+
+$primary: $yellow;
+$dark: $black;
+$stars-color: $alt-yellow;
+$stock-color: $green-yellow;
+$stock-warning-color: $orange;
+$stock-danger-color: $red;
+$order-card-bg-color: rgba($blue-gray, .42);
+$expert-tag-color: $orange-2;
+$collect-tag-color: $black;
+$contact-tag-color: $green;
+$elite-tag-color: $darker-yellow;
+$modal-telephone-color: $dark-yellow;
+$epi-bg-color: $blue;
+// Options
+$enable-rounded: false;
+
+// Typography
+$font-family-base: "Open sans", sans-serif;
+$font-size-base: .875rem;
+
+$headings-font-family: "Montserrat", sans-serif;
+$headings-font-weight: 400;
+
+$alternate-font-family: Nunito, sans-serif;
+
+// Header
+$header-links-margin: 0 .5rem;
+
+// Body
+$body-color: $gray-900;
+$body-bg: $gray-100;
+
+// Links
+$link-color: $body-color;
+$link-hover-color: lighten($link-color, 15%);
+
+// Grid containers
+
+$container-max-widths: (
+  sm: 700px,
+  md: 900px,
+  lg: 1300px,
+  xl: 1490px
+);
+
+// Components
+
+// Shadows
+$box-shadow: 0 3px 6px rgba($black, .16);
+
+// Buttons + forms
+$input-btn-padding-y: .625rem;
+$input-btn-padding-x: 1.5rem;
+
+// Buttons
+$btn-font-size: .6875rem;
+$btn-font-weight: 700;
+
+// Close
+$close-text-shadow: 0 0 0;
+
+/**
+ * Project variables
+ */
+$header-height: 83px;
+$sidebar-width: 83px;
+$logoheight: 82px;
+$user-card-shadows: 0 3px 15px rgba(#000, .16);
+$modal-box-shadow: $user-card-shadows;
+// Tabs Content
+$tab-padding: 4.875rem 1rem 4.875rem 5.0625rem;
+$tab-padding-md: 2.875rem 1rem;
+
+// Slick
+$slick-dots-color: 1px solid $dark-yellow;
+
+// Effects
+
+$generic-transition: all 200ms ease-in-out;
+
+// - custom select
+$select-width: 220px;
+$select-height: 42px;
+$select-color: rgba($dark, .55);
+$select-background: #EFEFEF;

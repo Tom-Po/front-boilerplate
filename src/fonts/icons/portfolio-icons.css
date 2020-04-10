@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "portfolio-icons";
+    src: url("./portfolio-icons.eot?1a4a2dd47f5b57d248b3ca99fdcbf198?#iefix") format("embedded-opentype"),
+url("./portfolio-icons.woff2?1a4a2dd47f5b57d248b3ca99fdcbf198") format("woff2"),
+url("./portfolio-icons.woff?1a4a2dd47f5b57d248b3ca99fdcbf198") format("woff"),
+url("./portfolio-icons.ttf?1a4a2dd47f5b57d248b3ca99fdcbf198") format("truetype"),
+url("./portfolio-icons.svg?1a4a2dd47f5b57d248b3ca99fdcbf198#portfolio-icons") format("svg");
+}
+
+i[class^="portfolio-icon-"]:before, i[class*=" portfolio-icon-"]:before {
+    font-family: portfolio-icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.portfolio-icon-close-button:before {
+    content: "\f101";
+}

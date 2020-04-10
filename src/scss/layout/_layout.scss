@@ -1,0 +1,37 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  padding-top: 83px;
+  overflow-x: hidden;
+}
+
+.container {
+  padding-right: $sidebar-width + 16px;
+  padding-left: $sidebar-width + 16px;
+}
+//a {
+//  cursor: none !important;
+//}
+
+/**
+ * Responsive behaviour
+ */
+
+@include media-breakpoint-down(lg) {
+
+  .container {
+    padding: 0 78px;
+  }
+
+}
+
+@include media-breakpoint-down(md) {
+
+  .container {
+    padding: 0 30px;
+  }
+
+}

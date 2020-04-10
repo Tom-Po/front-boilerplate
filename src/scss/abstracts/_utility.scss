@@ -1,0 +1,59 @@
+.part {
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+}
+
+.bubble {
+  font-size: .875rem;
+  text-transform: uppercase;
+  letter-spacing: .25em;
+  border-radius: 50%;
+  background-color: rgba($white, .23);
+  padding: 1rem;
+  cursor: pointer;
+  transition: all ease 1.5s;
+
+  .bubble-inner {
+    display: block;
+    border-radius: 50%;
+    background-color: rgba($white, .37);
+    padding: 1rem;
+    transition: all ease 1s;
+  }
+
+  .bubble-inner-inner {
+    background-color: $primary;
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all ease .5s;
+    text-align: center;
+  }
+
+  svg {
+
+    path {
+      fill: $white;
+    }
+
+  }
+
+  &:hover {
+    background-color: rgba($white, .45);
+
+    .cta-inner {
+      background-color: rgba($white, .42);
+    }
+
+    .cta-inner-inner {
+      width: 7rem;
+      height: 7rem;
+    }
+
+  }
+
+}

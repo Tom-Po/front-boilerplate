@@ -1,0 +1,31 @@
+header {
+  font-size: 1rem;
+  padding: 2rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  ul {
+    @include reset-list;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+      text-transform: uppercase;
+      margin: $header-links-margin;
+      a {
+        color: $white;
+        opacity: .8;
+        &:hover {
+          opacity: 1;
+          color: $white;
+          text-decoration: none;
+
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+body {
+  background-image: linear-gradient(to right top, #3d2a4b, #0e1015);
+  color: $white;
+  cursor: url(~assets/img/cursor.svg), default;
+  min-height: 100vh;
+
+  a {
+    cursor: url(~assets/img/cursor.svg), default;
+  }
+}

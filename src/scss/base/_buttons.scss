@@ -1,0 +1,36 @@
+.btn {
+  text-transform: uppercase;
+  letter-spacing: .25em;
+  position: relative;
+
+  &.btn-with-icon {
+    padding-right: $input-btn-padding-x + 2.5rem;
+  }
+
+  .btn-icon {
+    height: 100%;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid rgba($black, .2);
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: .8125rem;
+  }
+
+  &.btn-dark {
+
+    .btn-icon {
+      border-left-color: rgba($white, .2);
+
+      i {
+        color: $white;
+      }
+
+    }
+
+  }
+
+}

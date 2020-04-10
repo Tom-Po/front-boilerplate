@@ -1,0 +1,50 @@
+.project-list {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.project-list-item {
+    .inner {
+        display: inline-block;
+        padding: .5rem;
+    }
+
+    em {
+        font-size: 10px;
+        vertical-align: top;
+        margin-right: .5rem;
+    }
+
+    a {
+        color: $white;
+        position: relative;
+        opacity: .64;
+        transition: all 300ms ease-in-out;
+
+        &:after {
+            position: absolute;
+            content: "";
+            bottom: -.25rem;
+            left: 0;
+            height: 1px;
+            width: 100%;
+            background-color: $white;
+            transition: all 300ms ease-in-out;
+            transform: scaleX(0);
+            transform-origin: left;
+        }
+
+        &:hover {
+            text-decoration: none;
+            opacity: .9;
+
+            &:after {
+                transform: scaleX(1);
+            }
+        }
+    }
+}
