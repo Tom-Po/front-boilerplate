@@ -1,4 +1,5 @@
 body {
+  counter-reset: projects;
   background-image: linear-gradient(to right top, #3d2a4b, #0e1015);
   color: $white;
   cursor: url(~assets/img/cursor.svg), default;
@@ -6,5 +7,24 @@ body {
 
   a {
     cursor: url(~assets/img/cursor.svg), default;
+  }
+}
+
+.spacer-block {
+  min-height: 2000px;
+}
+
+.part-project {
+  padding: 3rem 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  > div {
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+  .project-list {
+    flex-shrink: 0;
   }
 }

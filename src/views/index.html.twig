@@ -4,15 +4,25 @@
 
 {% block main %}
 
-   <div class="container py-5">
+   <div class="container py-5" data-mount="Home">
        <p>
            <strong>Todo: Introduction</strong>
        </p>
-    <div class="project-list">
-        {% for i in 1..6 %}
-        {% include "partials/project-card.html.twig", with {'index': i} %}
-        {% endfor %}
+    <div class="spacer-block"></div>
+    <div class="part-project" data-mount="ProjectList">
+            <div class="project-list">
+                    {% for i in 1..6 %}
+                    {% include "partials/project-card.html.twig", with {'index': i} %}
+                    {% endfor %}
+                </div>
+            <div class="project-description">
+                <div class="inner">
+                    <h3 class="h3">Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate voluptate molestias, voluptatibus culpa natus dignissimos eius non, iusto labore voluptatem praesentium accusamus vero! Atque autem numquam voluptatem iusto recusandae omnis.</p>
+                </div>
+            </div>
     </div>
+    <div class="spacer-block"></div>
 
    </div>
 {% endblock %}

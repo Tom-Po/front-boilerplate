@@ -12,6 +12,14 @@ window.Kernel.registerComponent(
   'CustomCursor',
   require('./components/CustomCursor').default
 );
+window.Kernel.registerComponent(
+  'Home',
+  require('./components/Home').default
+);
+window.Kernel.registerComponent(
+  'ProjectList',
+  require('./components/ProjectList').default
+);
 
 window.Kernel.mountComponents($('body'));
 
