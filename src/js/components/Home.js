@@ -7,7 +7,7 @@ export default class Home {
     bind(){
 
         $(window).on('resize scroll', ()=> {
-            if(this.isInViewport($(".project-list"))){
+            if(this.isInViewport($(".project-list"), 300)){
                 $(".project-list").addClass("animated");
                 $(".project-description").addClass("animated");
             } else {
@@ -17,11 +17,15 @@ export default class Home {
         });
     }
 
-    isInViewport(el){
+    isInViewport(el, offset){
         let elementTop = $(el).offset().top;
         let elementBottom = elementTop + $(el).outerHeight();
         let viewportTop = $(window).scrollTop();
         let viewportBottom = viewportTop + $(window).height();
+        if(offset !== null){
+            viewportTop = viewportTop + offset;
+            viewportBottom = viewportBottom + offset;
+        }
         return elementBottom > viewportTop && elementTop < viewportBottom;
     };
 }

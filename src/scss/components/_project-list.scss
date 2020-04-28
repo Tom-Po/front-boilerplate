@@ -64,7 +64,8 @@
             transform-origin: left;
         }
 
-        &:hover {
+        &:hover,
+        &.active {
             text-decoration: none;
             opacity: .9;
 
