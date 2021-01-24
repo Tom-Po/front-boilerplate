@@ -6,6 +6,20 @@ img {
 body {
   padding-top: 83px;
   overflow-x: hidden;
+  &.is-menu-open {
+    height: 100%;
+    overflow: hidden;
+    padding-right: 17px;
+  }
+}
+
+.main-wrapper {
+  padding-top: 2rem;
+}
+
+div[class^="part-"],
+div[class*=" part-"] {
+  padding: 2rem;
 }
 
 .container {
@@ -21,17 +35,13 @@ body {
  */
 
 @include media-breakpoint-down(lg) {
-
   .container {
     padding: 0 78px;
   }
-
 }
 
 @include media-breakpoint-down(md) {
-
   .container {
     padding: 0 30px;
   }
-
 }

@@ -1,31 +1,101 @@
+body.scrolled {
+  header {
+    padding: 0 3rem;
+    background-color: $deep-blue;
+    z-index: 1010;
+  }
+}
 header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   font-size: 1rem;
-  padding: 2rem 0;
+  padding: 2rem 3rem;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  transition: background-color 300ms ease;
+  transition: padding 300ms ease;
+  .main-nav {
+    ul {
+      @include reset-list;
 
-  ul {
-    @include reset-list;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    li {
-      text-transform: uppercase;
-      margin: $header-links-margin;
-      a {
-        color: $white;
-        opacity: .8;
-        &:hover {
-          opacity: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      li {
+        text-transform: uppercase;
+        margin: $header-links-margin;
+        a {
           color: $white;
-          text-decoration: none;
+          opacity: 0.8;
+          transition: all 200ms ease;
 
+          &:hover {
+            opacity: 1;
+            color: $white;
+            text-decoration: none;
+          }
         }
       }
+    }
+  }
+}
+body.is-menu-open header {
+  z-index: 1050;
+  padding-right: calc(3rem + 17px);
+  .main-nav {
+    animation: fromRight 300ms 300ms forwards;
+    align-items: center;
+    background-color: $blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    right: 0;
+    opacity: 1;
+    height: 100vh;
+    top: 50%;
+    transform: translate(100%, -50%);
+    width: 100vw;
+    ul {
+      flex-direction: column;
+      li {
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  body.is-menu-open header {
+    padding: 1rem calc(1rem + 17px) 1rem 1rem;
+  }
+  header {
+    padding: 1rem;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  header {
+    .main-nav {
+      display: none;
+    }
+  }
+  body.is-menu-open header {
+    padding: 1rem calc(1rem + 17px) 1rem 1rem;
+    .main-nav {
+      display: flex;
+      position: fixed;
+      flex-direction: column;
+      top: 50%;
+      right: 0;
+      transform: translate(100%, -50%);
+      animation: fromRight 300ms 300ms forwards;
+      height: 100vh;
+      width: 100vw;
+      background-color: $blue;
     }
   }
 }

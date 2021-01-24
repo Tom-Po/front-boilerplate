@@ -1,0 +1,15 @@
+.underline {
+  position: relative;
+  &:hover::before {
+    width: 100%;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: $white;
+    transition: all 200ms ease;
+  }
+}
