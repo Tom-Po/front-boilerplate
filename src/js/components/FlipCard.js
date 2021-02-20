@@ -14,5 +14,15 @@ export default class FlipCard {
       self.view.addClass("unflipped");
       self.view.removeClass("flipped");
     });
+    console.log(this.findTag("test"));
+  }
+
+  findTag(tag_id) {
+    let result = $(".tags").filter((i, el) => el.innerText === tag_id);
+    return result.length === 1
+      ? result[0]
+      : () => {
+          console.log("No item found");
+        };
   }
 }
