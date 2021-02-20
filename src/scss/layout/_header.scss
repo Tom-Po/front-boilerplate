@@ -29,12 +29,13 @@ header {
       justify-content: center;
       align-items: center;
       li {
-        text-transform: uppercase;
+        text-transform: capitalize;
         margin: $header-links-margin;
         a {
           color: $font-color-base;
           opacity: 0.8;
           transition: all 200ms ease;
+          font-weight: 600;
 
           &:hover {
             opacity: 1;
@@ -49,10 +50,24 @@ header {
 body.is-menu-open header {
   z-index: 1050;
   padding-right: calc(3rem + 17px);
+  .brand-logo {
+    .logo:before {
+      background-color: $white;
+      transition-delay: 300ms;
+    }
+    svg {
+      fill: $white;
+      transition-delay: 300ms;
+    }
+    span {
+      color: $white;
+      transition-delay: 300ms;
+    }
+  }
   .main-nav {
     animation: fromRight 300ms 300ms forwards;
     align-items: center;
-    background-color: $blue;
+    background-color: $font-color-base;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,6 +82,9 @@ body.is-menu-open header {
       flex-direction: column;
       li {
         font-size: 1.3rem;
+        a {
+          color: $white;
+        }
       }
     }
   }

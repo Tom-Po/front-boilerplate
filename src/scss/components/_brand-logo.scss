@@ -5,8 +5,29 @@ body.scrolled .brand-logo {
   margin-right: auto;
   text-decoration: none;
   z-index: 1060;
+  display: flex;
+  align-items: center;
   &:hover {
     text-decoration: none;
+  }
+  .logo {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 1.5rem;
+      width: 2px;
+      background-color: lighten($font-color-base, 20%);
+    }
+  }
+  svg {
+    height: 64px;
+    width: 64px;
+    fill: $font-color-base;
+    padding-right: 1rem;
   }
   span {
     color: $font-color-base;

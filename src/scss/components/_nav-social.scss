@@ -46,9 +46,13 @@ body.is-menu-open nav.nav-social {
   svg {
     height: 32px;
     width: 32px;
+    fill: $white;
     &.linkedin {
       height: 24px;
       width: 24px;
+      path {
+        fill: $white;
+      }
     }
   }
 }

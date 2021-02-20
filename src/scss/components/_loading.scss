@@ -19,7 +19,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    animation: slideRight 4s forwards ease-in;
+    animation: slideRight 4s forwards ease-in-out;
     transform: translateX(0);
   }
   &::after {
