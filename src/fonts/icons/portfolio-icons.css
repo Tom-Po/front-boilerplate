@@ -1,10 +1,10 @@
 @font-face {
     font-family: "portfolio-icons";
-    src: url("./portfolio-icons.eot?97cdb15fb8af64aeb0dcfc11ef7fac8a?#iefix") format("embedded-opentype"),
-url("./portfolio-icons.woff2?97cdb15fb8af64aeb0dcfc11ef7fac8a") format("woff2"),
-url("./portfolio-icons.woff?97cdb15fb8af64aeb0dcfc11ef7fac8a") format("woff"),
-url("./portfolio-icons.ttf?97cdb15fb8af64aeb0dcfc11ef7fac8a") format("truetype"),
-url("./portfolio-icons.svg?97cdb15fb8af64aeb0dcfc11ef7fac8a#portfolio-icons") format("svg");
+    src: url("./portfolio-icons.eot?878a2ee3453ff001d6b3249d665a3762?#iefix") format("embedded-opentype"),
+url("./portfolio-icons.woff2?878a2ee3453ff001d6b3249d665a3762") format("woff2"),
+url("./portfolio-icons.woff?878a2ee3453ff001d6b3249d665a3762") format("woff"),
+url("./portfolio-icons.ttf?878a2ee3453ff001d6b3249d665a3762") format("truetype"),
+url("./portfolio-icons.svg?878a2ee3453ff001d6b3249d665a3762#portfolio-icons") format("svg");
 }
 
 i[class^="portfolio-icon-"]:before, i[class*=" portfolio-icon-"]:before {
@@ -21,15 +21,6 @@ i[class^="portfolio-icon-"]:before, i[class*=" portfolio-icon-"]:before {
 .portfolio-icon-close-button:before {
     content: "\f101";
 }
-.portfolio-icon-eye:before {
-    content: "\f102";
-}
-.portfolio-icon-frontend:before {
-    content: "\f103";
-}
 .portfolio-icon-linkedin:before {
-    content: "\f104";
-}
-.portfolio-icon-pencils:before {
-    content: "\f105";
+    content: "\f102";
 }

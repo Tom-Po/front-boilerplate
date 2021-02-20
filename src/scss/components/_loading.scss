@@ -1,0 +1,71 @@
+.loading-page {
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  animation: fadeOut 600ms 5s forwards;
+  &::before {
+    content: "";
+    position: fixed;
+    z-index: 1020;
+    background-color: $white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    animation: slideRight 4s forwards ease-in;
+    transform: translateX(0);
+  }
+  &::after {
+    content: "Jardins Cozy";
+    position: fixed;
+    top: calc(67.5vh + 2rem);
+    left: 50%;
+    right: 0;
+    color: $font-color-base;
+    opacity: 0;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 2rem;
+    animation: fadeIn 1s 3s forwards;
+    z-index: 1030;
+  }
+  svg {
+    height: 50vh;
+    width: 50vh;
+    fill: $font-color-base;
+  }
+  .loading-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0.5vh;
+    z-index: 1050;
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $font-color-base;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 0;
+      animation: fillLeft 4s cubic-bezier(0.455, 0.03, 0.315, 0.955) forwards;
+    }
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}

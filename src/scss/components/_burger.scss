@@ -7,7 +7,7 @@ $scale: 0.7; // icon scale 68/68 ..
   display: block;
   width: 68px;
   height: 68px;
-  background: $deep-blue;
+  background: $white;
   -webkit-touch-callout: none;
   user-select: none;
   z-index: 1060;
@@ -49,7 +49,7 @@ body.is-menu-open .hamburglar {
     width: 30px;
     height: 34px;
     margin: 0 4px 0 0;
-    background: $white;
+    background: $font-color-base;
   }
 }
 
@@ -179,7 +179,7 @@ body.is-menu-open .hamburglar {
   height: 4px;
   width: 36px;
   border-radius: 2px;
-  background: $white;
+  background: $font-color-base;
 }
 
 .burger-bun-top {

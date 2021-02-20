@@ -58,12 +58,14 @@ $headings-font-weight: 400;
 
 $alternate-font-family: Nunito, sans-serif;
 
+$font-color-base: #306874;
+
 // Header
 $header-links-margin: 0 0.5rem;
 
 // Body
-$body-color: $gray-900;
-$body-bg: $gray-100;
+$body-color: $black;
+$body-bg: $white;
 
 // Links
 $link-color: $body-color;
@@ -118,3 +120,5 @@ $select-width: 220px;
 $select-height: 42px;
 $select-color: rgba($dark, 0.55);
 $select-background: #efefef;
+
+$loader-duration: 8s;

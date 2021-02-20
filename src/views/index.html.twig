@@ -1,151 +1,24 @@
 {% extends 'layout/base.html.twig' %} {% block pageTitle %}Accueil{% endblock %}
 {% block main %}
-
-<div>
-  <div class="part-profile">
-    <div class="profile">
-      <h1>Hello,</h1>
-      <p>My name is Tom and I've been a Web Developper for 5 years</p>
-    </div>
-    <div class="profile-cards">
-      <div class="profile-card">
-        <div class="inner">
-          <div class="icon">{% include "../img/icons/pencils.svg" %}</div>
-          <div class="content">
-            <h4>UX, UI</h4>
-            <div>Apps</div>
-            <div>Desktop</div>
-            <div>Mobile</div>
-            <div>Adobe XD</div>
-            <div>Adobe Illustrator</div>
-            <div>Adobe Photoshop</div>
-            <div>Sketch</div>
-          </div>
-        </div>
+<div class="part-projects">
+  <div class="project-cards">
+    <div class="project-card">
+      <div class="thumb">
+        <img src="../img/projects/odinard.png" alt="" />
       </div>
-
-      <div
-        class="profile-card flipable default unflipped"
-        data-mount="FlipCard"
-      >
-        <div class="inner">
-          <div class="tags">test</div>
-          <div class="tags">random 1</div>
-          <div class="tags">random 2</div>
-          <div class="front">
-            <div class="icon">{% include "../img/icons/frontend.svg" %}</div>
-            <div class="content">
-              <h4>Front-End</h4>
-              <div>HTML 5, Twig, CSS 3</div>
-              <div>SASS Architecture 7.1</div>
-              <div>Javascript ES2018</div>
-              <div>React</div>
-              <div>React Native</div>
-              <div>Redux</div>
-              <div>Webpack - Snowpack</div>
-            </div>
-          </div>
-          <div class="back">
-            <div class="icon">{% include "../img/backend.svg" %}</div>
-            <div class="content">
-              <h4>Back-End</h4>
-              <div>PHP 5.6 / 7.4</div>
-              <div>Symfony 4</div>
-              <div>Redis</div>
-              <div>MySQL</div>
-              <div>MongoDB</div>
-              <div>Express</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="profile-card">
-        <div class="inner">
-          <div class="icon">{% include "../img/icons/eye.svg" %}</div>
-          <div class="content">
-            <h4>SEO & Performance</h4>
-            <div>Minify / Uglify / Optimize</div>
-            <div>Icon fonts</div>
-            <div>Modern pictures format</div>
-            <div>LightHouse</div>
-            <div>DareBoost</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="profile-card">
-        <div class="inner">
-          <div class="icon">{% include "../img/icons/eye.svg" %}</div>
-          <div class="content">
-            <h4>Tools & Workflow</h4>
-            <div>Git - CI</div>
-            <div>Jest</div>
-            <div>SonarLint</div>
-            <div>StyleHint / HtmlLint</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="profile-card">
-        <div class="inner">
-          <div class="icon">{% include "../img/icons/eye.svg" %}</div>
-          <div class="content">
-            <h4>Project Managment</h4>
-            <div>AGILE</div>
-            <div>Kanban</div>
-            <div>Mantis</div>
-            <div>Trello</div>
-            <div>Jira</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- <div class="part-project" data-mount="ProjectList">
-    <div class="project-list">
-      {% for i in 1..6 %} {% include "partials/project-card.html.twig", with
-      {'index': i} %} {% endfor %}
-    </div>
-    <div class="project-description">
-      <div class="inner">
-        <h3 class="h3">Lorem ipsum</h3>
+      <div class="content">
+        <h3>Hotel Barrière Dinard</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
-          voluptate molestias, voluptatibus culpa natus dignissimos eius non,
-          iusto labore voluptatem praesentium accusamus vero! Atque autem
-          numquam voluptatem iusto recusandae omnis.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+          corrupti magni fugit veritatis enim soluta, praesentium ad impedit a
+          quia molestiae iusto tenetur distinctio, recusandae doloremque omnis.
+          Voluptatum, quidem animi.
         </p>
       </div>
     </div>
-  </div> -->
-  <div class="wave-background">
-    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320">
-      <path
-        fill="#d8d8d8"
-        fill-opacity="1"
-        d="M0,64L48,96C96,128,192,192,288,218.7C384,245,480,235,576,245.3C672,256,768,288,864,304C960,320,1056,320,1152,293.3C1248,267,1344,213,1392,186.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-      ></path>
-    </svg>
-  </div>
-  <div class="wave-background">
-    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320">
-      <path
-        fill="#e5e5e5"
-        fill-opacity="1"
-        d="M0,256L48,245.3C96,235,192,213,288,224C384,235,480,277,576,261.3C672,245,768,171,864,133.3C960,96,1056,96,1152,90.7C1248,85,1344,75,1392,69.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-      ></path>
-    </svg>
   </div>
 </div>
+{% include './components/loader.html.twig' %}
 <div class="spacer-block"></div>
-<div class="part-career">
-  <h3>Career</h3>
-  <p>
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis
-    provident voluptates nesciunt voluptatum fugit qui hic similique, deserunt
-    reiciendis? Repudiandae maiores soluta sint sunt, nesciunt et voluptate non
-    optio consequuntur.
-  </p>
-</div>
+
 {% endblock %}

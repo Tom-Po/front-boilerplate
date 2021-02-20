@@ -1,0 +1,39 @@
+.project-cards {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 300ms 5.7s forwards ease;
+  opacity: 0;
+}
+
+.project-card {
+  background-color: $gray-100;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  min-height: 50vh;
+  .thumb {
+    position: relative;
+    margin-left: -2rem;
+    margin-top: -2rem;
+    margin-bottom: -2rem;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fromLeft 1s 6s forwards ease;
+    width: 60%;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .content {
+    width: 40%;
+    padding: 1rem;
+  }
+}

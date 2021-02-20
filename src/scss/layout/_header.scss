@@ -1,7 +1,7 @@
 body.scrolled {
   header {
     padding: 0 3rem;
-    background-color: $deep-blue;
+    background-color: $white;
     z-index: 1010;
   }
 }
@@ -15,8 +15,12 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  opacity: 0;
+  background-color: $white;
   transition: background-color 300ms ease;
   transition: padding 300ms ease;
+  animation: fadeIn 300ms 5.7s forwards ease;
+  z-index: 1010;
   .main-nav {
     ul {
       @include reset-list;
@@ -28,13 +32,13 @@ header {
         text-transform: uppercase;
         margin: $header-links-margin;
         a {
-          color: $white;
+          color: $font-color-base;
           opacity: 0.8;
           transition: all 200ms ease;
 
           &:hover {
             opacity: 1;
-            color: $white;
+            color: $font-color-base;
             text-decoration: none;
           }
         }
