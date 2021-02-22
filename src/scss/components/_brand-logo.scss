@@ -10,6 +10,19 @@ body.scrolled .brand-logo {
   &:hover {
     text-decoration: none;
   }
+  &.inverted {
+    svg {
+      fill: $white;
+    }
+    span {
+      color: $white;
+    }
+    .logo {
+      &::before {
+        background-color: $white;
+      }
+    }
+  }
   .logo {
     position: relative;
     &::before {

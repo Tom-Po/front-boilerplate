@@ -1,24 +1,9 @@
 {% extends 'layout/base.html.twig' %} {% block pageTitle %}Accueil{% endblock %}
-{% block main %}
-<div class="part-projects">
-  <div class="project-cards">
-    <div class="project-card">
-      <div class="thumb">
-        <img src="../img/projects/odinard.png" alt="" />
-      </div>
-      <div class="content">
-        <h3>Hotel Barrière Dinard</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-          corrupti magni fugit veritatis enim soluta, praesentium ad impedit a
-          quia molestiae iusto tenetur distinctio, recusandae doloremque omnis.
-          Voluptatum, quidem animi.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-{% include './components/loader.html.twig' %}
-<div class="spacer-block"></div>
+{% block main %} 
+{% include './partials/projects.html.twig' %} 
+{% include './partials/form.html.twig' %} 
 
+{% include './components/loader.html.twig' %}
+
+<!-- <div class="spacer-block"></div> -->
 {% endblock %}

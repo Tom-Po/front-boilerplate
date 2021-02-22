@@ -1,27 +1,54 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <meta name="theme-color" content="#E8E100">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur viverra nisl sit amet ante tristique"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta name="theme-color" content="#E8E100" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta
+      name="description"
+      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur viverra nisl sit amet ante tristique"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <title>Portfolio - {% block pageTitle %}{% endblock %}</title>
-</head>
-<body class="{% block bodyClass %}{% endblock %}">
-{% block body %}
-    {% include "../includes/header.html.twig" %}
+  </head>
+  <body class="{% block bodyClass %}{% endblock %}">
+    {% block body %} {% include "../includes/header.html.twig" %}
     <div class="main-wrapper">
-        {% block main %}{% endblock %}
-        {% include "../includes/footer.html.twig" %}
+      {% block main %}{% endblock %} {% include "../includes/footer.html.twig"
+      %}
     </div>
-{% endblock %}
-{# <div class="cursor cursor--small" data-mount="CustomCursor"></div>
-<canvas class="cursor cursor--canvas" resize></canvas> #}
-
-</body>
+    {% endblock %}
+  </body>
 </html>

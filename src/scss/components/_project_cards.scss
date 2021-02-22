@@ -2,8 +2,9 @@
   padding-top: 2rem;
   display: flex;
   flex-direction: column;
-  animation: fadeIn 300ms 5.7s forwards ease;
-  opacity: 0;
+  // animation: fadeIn 300ms 5.7s forwards ease;
+  //opacity: 0;
+  opacity: 1;
 }
 
 .project-card {
@@ -12,6 +13,9 @@
   flex-direction: row;
   align-items: stretch;
   min-height: 50vh;
+  &:not(:last-of-type) {
+    margin-bottom: 7rem;
+  }
   .thumb {
     position: relative;
     margin-left: -2rem;

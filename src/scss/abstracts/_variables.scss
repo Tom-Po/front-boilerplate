@@ -30,9 +30,10 @@ $gray-900: #0e1015;
 $black: #000;
 
 $blue: #179fe3;
+$teal: #4b6b72;
 $magenta: #f2505d;
 
-$primary: $yellow;
+$primary: $teal;
 $dark: $black;
 $stars-color: $alt-yellow;
 $stock-color: $green-yellow;
@@ -58,7 +59,7 @@ $headings-font-weight: 400;
 
 $alternate-font-family: Nunito, sans-serif;
 
-$font-color-base: hsl(191, 21%, 37%);
+$font-color-base: $teal;
 
 // Header
 $header-links-margin: 0 0.5rem;

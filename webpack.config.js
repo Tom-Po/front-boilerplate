@@ -51,6 +51,7 @@ module.exports = {
   },
 
   optimization: {
+    minimize: true,
     minimizer: [
       new UglifyJsPlugin({
         cache: true,
