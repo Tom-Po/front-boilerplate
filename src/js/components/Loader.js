@@ -5,6 +5,7 @@ export default class Loader {
   }
   bind() {
     setTimeout(() => {
+      document.body.classList.remove("is-loading");
       this.view.hide();
     }, 5300);
   }

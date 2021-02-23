@@ -1,6 +1,7 @@
-<div class="part-projects">
+<div class="part-projects" id="projects">
   <div class="project-cards">
-    <div class="project-card">
+    {% for i in 1..3 %}
+      <div class="project-card">
       <div class="thumb">
         <img src="../img/projects/odinard.png" alt="" />
       </div>
@@ -28,5 +29,6 @@
         </p>
       </div>
     </div>
+    {% endfor %}
   </div>
 </div>

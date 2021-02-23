@@ -1,26 +1,31 @@
 body.scrolled {
   header {
-    padding: 0 3rem;
     background-color: $white;
-    z-index: 1010;
+    .inner {
+      padding: 0 3rem;
+    }
   }
 }
 header {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
   font-size: 1rem;
-  padding: 2rem 3rem;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background-color: $white;
   transition: background-color 300ms ease;
-  transition: padding 300ms ease;
   // animation: fadeIn 300ms 5.7s forwards ease;
   // opacity: 0;
   opacity: 1;
+  z-index: 900;
+
+  .inner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 2rem 3rem;
+    transition: padding 300ms ease;
+  }
   .main-nav {
     ul {
       @include reset-list;
@@ -49,7 +54,7 @@ header {
 }
 body.is-menu-open header {
   z-index: 1050;
-  padding-right: calc(3rem + 17px);
+  padding-right: 17px;
   .brand-logo {
     .logo:before {
       background-color: $white;

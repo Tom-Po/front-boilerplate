@@ -5,6 +5,7 @@
   // animation: fadeIn 300ms 5.7s forwards ease;
   //opacity: 0;
   opacity: 1;
+  margin-bottom: 3rem;
 }
 
 .project-card {
@@ -15,6 +16,9 @@
   min-height: 50vh;
   &:not(:last-of-type) {
     margin-bottom: 7rem;
+  }
+  &:nth-of-type(2) .thumb {
+    animation-delay: 6.5s;
   }
   .thumb {
     position: relative;

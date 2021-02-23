@@ -10,6 +10,7 @@
   left: 0;
   right: 0;
   animation: fadeOut 600ms 5s forwards;
+  z-index: 1010;
   &::before {
     content: "";
     position: fixed;

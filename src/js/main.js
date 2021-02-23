@@ -37,3 +37,17 @@ $(window).on("scroll", (e) => {
     $("body").removeClass("scrolled");
   }
 });
+
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    if ($("body").hasClass("is-menu-open")) {
+      $("body").removeClass("is-menu-open");
+      $("#hamburger").removeClass("is-open");
+      $("#hamburger").addClass("is-closed");
+    }
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});
