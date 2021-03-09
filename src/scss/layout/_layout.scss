@@ -2,27 +2,19 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+html,
 body {
-  padding-top: 83px;
-  overflow-x: hidden;
-  &.is-loading {
-    max-height: 100vh;
-    overflow: hidden;
-  }
-  &.is-menu-open {
-    height: 100%;
-    overflow: hidden;
-    padding-right: 17px;
-    transition-delay: 400ms;
-  }
-}
-
-.main-wrapper {
-  padding-top: 2rem;
+  height: 100%;
+  margin: 0;
 }
 
 div[class^="part-"],
 div[class*=" part-"] {
-  padding: 2rem;
+  padding: 2rem 0;
+}
+
+.part-content {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
 }

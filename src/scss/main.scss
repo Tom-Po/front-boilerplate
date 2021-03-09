@@ -3,8 +3,6 @@
 
 // Vendors
 @import "vendors/bootstrap";
-@import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
 
 // Fonts
 // @import "../fonts/icons/portfolio-icons.css";
@@ -18,9 +16,8 @@
 @import "layout/header";
 @import "layout/footer";
 
-@import "components/loading";
-
-@import "pages/home";
+// Components
+// @import "components/...";
 
 /* Only for debug propose */
 //@import "debug";
