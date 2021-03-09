@@ -3,74 +3,51 @@
  */
 
 // Colors
-$deep-blue: #011526;
-$red: #e83e00;
-$vibrant-green: #bef50c;
-$green: #54b500;
+// $deep-blue: #011526;
+// $red: #e83e00;
+// $vibrant-green: #bef50c;
+// $green: #54b500;
 
-$yellow: #e8e100;
-$darker-yellow: #ccc600;
-$dark-yellow: #b5b000;
-$alt-yellow: #dbd400;
-$green-yellow: #bbcb00;
+// $yellow: #e8e100;
+// $darker-yellow: #ccc600;
+// $dark-yellow: #b5b000;
+// $alt-yellow: #dbd400;
+// $green-yellow: #bbcb00;
 
-$orange: #ff8900;
-$orange-2: #ffa222;
+// $orange: #ff8900;
+// $orange-2: #ffa222;
 
-$ice-blue: #dbe5ea;
-$blue-gray: #dee2e3;
-$white: #fefff7;
-$gray-100: #f8f8f8;
-$gray-200: #efefef;
-$gray-300: #c6c6c6;
-$gray-400: #9d9d9d;
-$gray-500: #838383;
-$gray-600: #626262;
-$gray-900: #0e1015;
-$black: #000;
+// $ice-blue: #dbe5ea;
+// $blue-gray: #dee2e3;
+// $white: #fefff7;
+// $gray-100: #f8f8f8;
+// $gray-200: #efefef;
+// $gray-300: #c6c6c6;
+// $gray-400: #9d9d9d;
+// $gray-500: #838383;
+// $gray-600: #626262;
+// $gray-900: #0e1015;
+// $black: #000;
 
-$blue: #179fe3;
-$teal: #4b6b72;
-$magenta: #f2505d;
-
-$primary: $teal;
-$dark: $black;
-$stars-color: $alt-yellow;
-$stock-color: $green-yellow;
-$stock-warning-color: $orange;
-$stock-danger-color: $red;
-$order-card-bg-color: rgba($blue-gray, 0.42);
-$expert-tag-color: $orange-2;
-$collect-tag-color: $black;
-$contact-tag-color: $green;
-$elite-tag-color: $darker-yellow;
-$modal-telephone-color: $dark-yellow;
-$epi-bg-color: $blue;
-$profile-icon-color: $magenta;
 // Options
 $enable-rounded: false;
 
 // Typography
-$font-family-base: "Montserrat", sans-serif;
-$font-size-base: 0.875rem;
+// $font-family-base: "Montserrat", sans-serif;
+// $font-size-base: 0.875rem;
 
-$headings-font-family: "Montserrat", sans-serif;
-$headings-font-weight: 400;
+// $headings-font-family: "Montserrat", sans-serif;
+// $headings-font-weight: 400;
 
-$alternate-font-family: Nunito, sans-serif;
+// $alternate-font-family: Nunito, sans-serif;
 
-$font-color-base: $teal;
+// $font-color-base: $teal;
 
 // Header
-$header-links-margin: 0 0.5rem;
 
 // Body
-$body-color: $black;
-$body-bg: $white;
 
 // Links
-$link-color: $body-color;
-$link-hover-color: lighten($link-color, 15%);
 
 // Grid containers
 
@@ -82,43 +59,3 @@ $container-max-widths: (
 );
 
 // Components
-
-// Shadows
-$box-shadow: 0 5px 19px -3px rgba(#898989, 0.2);
-// Buttons + forms
-$input-btn-padding-y: 0.625rem;
-$input-btn-padding-x: 1.5rem;
-
-// Buttons
-$btn-font-size: 0.6875rem;
-$btn-font-weight: 700;
-
-// Close
-$close-text-shadow: 0 0 0;
-
-/**
- * Project variables
- */
-$header-height: 83px;
-$sidebar-width: 83px;
-$logoheight: 82px;
-$user-card-shadows: 0 3px 15px rgba(#000, 0.16);
-$modal-box-shadow: $user-card-shadows;
-// Tabs Content
-$tab-padding: 4.875rem 1rem 4.875rem 5.0625rem;
-$tab-padding-md: 2.875rem 1rem;
-
-// Slick
-$slick-dots-color: 1px solid $dark-yellow;
-
-// Effects
-
-$generic-transition: all 200ms ease-in-out;
-
-// - custom select
-$select-width: 220px;
-$select-height: 42px;
-$select-color: rgba($dark, 0.55);
-$select-background: #efefef;
-
-$loader-duration: 8s;

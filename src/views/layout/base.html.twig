@@ -14,38 +14,18 @@
       name="description"
       content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur viverra nisl sit amet ante tristique"
     />
-    <link
+    {# <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="/src/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/src/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/src/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/src/favicon/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="/src/favicon/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    /> #}
+    {# <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       rel="preload"
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
       rel="stylesheet"
-    />
-    <title>Jardins Cozy - {% block pageTitle %}{% endblock %}</title>
+    /> #}
+    <title>TITLE - {% block pageTitle %}{% endblock %}</title>
   </head>
   <body class="{% block bodyClass %}{% endblock %} is-loading">
     {% block body %} {% include "../includes/header.html.twig" %}

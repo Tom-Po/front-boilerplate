@@ -9,10 +9,6 @@ require("bootstrap");
 const Kernel = require("./utils/Kernel");
 window.Kernel = new Kernel();
 window.Kernel.registerComponent(
-  "Burger",
-  require("./components/Burger").default
-);
-window.Kernel.registerComponent(
   "Loader",
   require("./components/Loader").default
 );

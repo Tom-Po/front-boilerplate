@@ -1,51 +1,5 @@
-{% extends 'layout/base.html.twig' %} {% block pageTitle %}Accueil{% endblock %}
-{% block main %} {% include './partials/banner.html.twig' %}
+{% extends 'layout/base.html.twig' %} 
 
-<div class="part-skills">
-  <div class="container">
-    <div class="skill-cards">
-      <div class="skill-card">
-        <div class="inner">
-          <div class="icon">{% include "../img/icons/lawn-mower.svg" %}</div>
-          <div class="content">
-            <h4>Entretien</h4>
-            <p>
-              Désherbage manuel, tonte de pelouses, <br />
-              taille d'arbustes
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="skill-card">
-        <div class="inner">
-          <div class="icon">{% include "../img/icons/chat.svg" %}</div>
-          <div class="content">
-            <h4>Conseils</h4>
-            <p>
-              Aide à la conception et à la réalisation de vos espaces
-              d'aménagement, <br />
-              ateliers pédagogiques
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="skill-card">
-        <div class="inner">
-          <div class="icon">{% include "../img/icons/service.svg" %}</div>
-          <div class="content">
-            <h4>Service à la personne</h4>
-            <p>
-              Revalorisation, évacuation des rémanants, <br />
-              entretien du matériel
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+{% block pageTitle %}Accueil{% endblock %}
 
-{% include './partials/projects.html.twig' %} {#
-<div class="spacer-block"></div>
-#} {% include './partials/form.html.twig' %} {% include
-'./components/loader.html.twig' %} {% endblock %}
+{% endblock %}
