@@ -1,5 +1,7 @@
 # Front Boilerplate
 
+Basic Front Boilerplate using Twig and JS/HTML/SCSS(architecture 7.1)
+
 ### Installation
 
 Install by running

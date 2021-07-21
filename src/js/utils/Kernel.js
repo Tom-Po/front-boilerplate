@@ -19,22 +19,20 @@ class Kernel {
     }
 
     getComponent(component_id) {
-        const $node = $('#' + component_id);
+        const $node = document.getElementById(component_id)
         if ($node)
-            return $node.data('component');
+            return $node.dataset.component;
         return null;
     }
 
     createComponent($html) {
-
-        const uname = $html.data('mount');
-
+        const uname = $html.dataset.mount;
         if (!uname)
             return null;
 
         const factory = this.factories[uname];
         if (!factory) {
-            console.log(uname + ' component not found');
+            console.error(uname + ' component not found');
             return null;
         }
 
@@ -44,23 +42,19 @@ class Kernel {
     mountComponents($view) {
         const self = this;
 
-        $view.find('[data-mount]').each(function (idx, node) {
-
-            let $node = $(node);
-
-            if ($node.data('component'))
+        $view.querySelectorAll("[data-mount]").forEach(function ($node, idx) {
+            if ($node.dataset.component) {
                 return null;
-
+            }
             let component = self.createComponent($node);
-            $node.data('component', component);
-
-        });
+            $node.dataset.component = component;
+        })
     }
 
 }
 
 function isNativeClass(thing) {
-    return typeof thing === 'function' && thing.hasOwnProperty('prototype'); // && !thing.hasOwnProperty('arguments');
+    return typeof thing === 'function' && thing.hasOwnProperty('prototype');
 }
 
 module.exports = Kernel;

@@ -13,7 +13,7 @@ window.Kernel.registerComponent(
   require("./components/Loader").default
 );
 
-window.Kernel.mountComponents($("body"));
+window.Kernel.mountComponents(document);
 
 /*
  * Petit hack pour forcer le load des images par webpack
@@ -23,9 +23,6 @@ function importAll(r) {
   return r.keys().map(r);
 }
 
-const images = importAll(
-  require.context("../img/", true, /\.(png|jpe?g|svg|ico)$/)
-);
 $(window).on("scroll", (e) => {
   if (window.scrollY > 60) {
     $("body").addClass("scrolled");
